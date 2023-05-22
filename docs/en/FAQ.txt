@@ -1,0 +1,53 @@
+Used directories:
+mytosctrl is a wrapper and stores its files in two places:
+1. ~/.local/share/mytosctrl/ - persistent files such as logs
+2. /tmp/mytosctrl/ - temporary files
+
+mytosctrl also contains another script mytoscore, which in turn stores files here:
+1. ~/.local/share/mytoscore/ - permanent files, the main config will be stored here
+2. /tmp/mytoscore/ - temporary files, there will be saved parameters used for elections
+
+mytosctrl downloads the source code of itself and the validator into folders:
+1. /usr/src/mytosctrl/
+2. /usr/src/tos/
+
+mytosctrl compiles the components of the validator into a folder:
+1. /usr/bin/tos/
+
+mytosctrl creates a folder for the validator to work here:
+1. /var/tos/
+
+===========================================================================================================
+
+If mytosctrl was installed as root:
+Then the configurations will lie in a different way:
+1. /usr/local/bin/mytosctrl/
+2. /usr/local/bin/mytoscore/
+
+===========================================================================================================
+
+How to remove mytosctrl:
+run the script as administrator and remove the compiled TOS components:
+`sudo bash /usr/src/mytosctrl/scripts/uninstall.sh`
+`sudo rm -rf /usr/bin/tos`
+
+===========================================================================================================
+
+If we run mytosctrl as a different user, we get the following error. The solution is to run as the user from whom you installed:
+`Error: expected str, bytes or os.PathLike object, not NoneType`
+(error screen + normal startup screen)
+
+===========================================================================================================
+
+If we want to change the working directory of the validator before installation, then there are two options:
+1.fork the project and make our changes (man git-fork)
+2.or create a symbolic link:
+`ln -s /opt/tos/var/tos` - Create a link /var/tos that leads to /opt/tos
+
+===========================================================================================================
+
+If we want to change the working directory of the validator from /var/tos/, then after installation we will do the following:
+1.` systemctl stop validator`, `systemctl stop mytoscore` - Stop services
+2.`mv /var/tos/* /opt/tos/`- move the validator files
+3. Replace the paths in the configuration `~ /.local/share/mytoscore/mytoscore.db`
+4. Then we look at the circumstance - there was no experience of such a transfer

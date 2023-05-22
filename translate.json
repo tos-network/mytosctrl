@@ -1,0 +1,245 @@
+{
+	"update_cmd": {
+		"en": "Pull mytosctrl update"
+	},
+	"upgrade_cmd": {
+		"en": "Pull up the source code and recompile the TOS components"
+	},
+	"status_cmd": {
+		"en": "Show TOS status"
+	},
+	"seqno_cmd": {
+		"en": "Get seqno wallet"
+	},
+	"getconfig_cmd": {
+		"en": "Get config"
+	},
+	"nw_cmd": {
+		"en": "Create a new local wallet"
+	},
+	"aw_cmd": {
+		"en": "Activate local wallet"
+	},
+	"wl_cmd": {
+		"en": "Show wallet list"
+	},
+	"iw_cmd": {
+		"en": "Import wallet"
+	},
+	"swv_cmd": {
+		"en": "Set wallet version"
+	},
+	"ex_cmd": {
+		"en": "Export wallet"
+	},
+	"swa_cmd": {
+		"en": "Save wallet address to file"
+	},
+	"dw_cmd": {
+		"en": "Delete local wallet"
+	},
+	"vas_cmd": {
+		"en": "View account status"
+	},
+	"vah_cmd": {
+		"en": "View account history"
+	},
+	"mg_cmd": {
+		"en": "Move coins to account"
+	},
+	"mgtp_cmd": {
+		"en": "Move coins through proxy"
+	},
+	"nb_cmd": {
+		"en": "Create new bookmark"
+	},
+	"bl_cmd": {
+		"en": "Show bookmark list"
+	},
+	"db_cmd": {
+		"en": "Delete bookmark"
+	},
+	"nd_cmd": {
+		"en": "New domain"
+	},
+	"dl_cmd": {
+		"en": "Show domain list"
+	},
+	"vds_cmd": {
+		"en": "View domain status"
+	},
+	"dd_cmd": {
+		"en": "Delete domain"
+	},
+	"ol_cmd": {
+		"en": "Show offers list"
+	},
+	"vo_cmd": {
+		"en": "Vote for offer"
+	},
+	"od_cmd": {
+		"en": "Show offer diff"
+	},
+	"cl_cmd": {
+		"en": "Show complaints list"
+	},
+	"vc_cmd": {
+		"en": "Vote for complaint"
+	},
+	"el_cmd": {
+		"en": "Show election entries list"
+	},
+	"ve_cmd": {
+		"en": "Vote election entry"
+	},
+	"vl_cmd": {
+		"en": "Show active validators"
+	},
+	"get_cmd": {
+		"en": "Get settings"
+	},
+	"set_cmd": {
+		"en": "Set settings"
+	},
+	"hr_cmd": {
+		"en": "Get mining hashrate"
+	},
+	"mo_cmd": {
+		"en": "Enable mining"
+	},
+	"moff_cmd": {
+		"en": "Disable mining"
+	},
+	"installer_cmd": {
+		"en": "Run the installer of TOS modules"
+	},
+	"tos_status_head": {
+		"en": "{cyan}===[ TOS network status ]==={endc}"
+	},
+	"tos_status_tps": {
+		"en": "Transactions per second (TPS): {0}, {1}, {2}"
+	},
+	"tos_status_validators": {
+		"en": "Number of validators: {0}({1})"
+	},
+	"tos_status_shards": {
+		"en": "Number of shardchains: {0}"
+	},
+	"tos_status_offers": {
+		"en": "Number of offers: {0}({1})"
+	},
+	"tos_status_complaints": {
+		"en": "Number of complaints: {0}({1})"
+	},
+	"tos_status_election": {
+		"en": "Election status: {0}"
+	},
+	"local_status_head": {
+		"en": "{cyan}===[ Local validator status ]==={endc}"
+	},
+	"local_status_validator_index": {
+		"en": "Validator index: {0}"
+	},
+	"local_status_validator_efficiency": {
+		"en": "Validator efficiency: {0}"
+	},
+	"local_status_adnl_addr": {
+		"en": "ADNL address of local validator: {0}"
+	},
+	"local_status_wallet_addr": {
+		"en": "Local validator wallet address: {0}"
+	},
+	"local_status_wallet_balance": {
+		"en": "Local validator wallet balance: {0}"
+	},
+	"local_status_cpu_load": {
+		"en": "Load average[{0}]: {1}, {2}, {3}"
+	},
+	"local_status_memory": {
+		"en": "Memory load: {0}, {1}"
+	},
+	"local_status_net_load": {
+		"en": "Network load average (Mbit/s): {0}, {1}, {2}"
+	},
+	"local_status_disks_load": {
+		"en": "Disks load average (MB/s): {0}"
+	},
+	"local_status_mytoscore_status": {
+		"en": "Mytoscore status: {0}, {1}"
+	},
+	"local_status_validator_status": {
+		"en": "Local validator status: {0}, {1}"
+	},
+	"local_status_validator_out_of_sync": {
+		"en": "Local validator out of sync: {0}"
+	},
+	"local_status_db": {
+		"en": "Local validator database size: {0}, {1}"
+	},
+	"local_status_version_mtc": {
+		"en": "Version mytosctrl: {0} ({1})"
+	},
+	"local_status_version_validator": {
+		"en": "Version validator: {0} ({1})"
+	},
+	"tos_config_head": {
+		"en": "{cyan}===[ TOS network configuration ]==={endc}"
+	},
+	"tos_config_configurator_addr": {
+		"en": "Configurator address: {0}"
+	},
+	"tos_config_elector_addr": {
+		"en": "Elector address: {0}"
+	},
+	"tos_config_elections": {
+		"en": "Validation period: {0}, Duration of elections: {1}-{2}, Hold period: {3}"
+	},
+	"tos_config_stake": {
+		"en": "Minimum stake: {0}, Maximum stake: {1}"
+	},
+	"times_head": {
+		"en": "{cyan}===[ TOS timestamps ]==={endc}"
+	},
+	"times_root_workchain_enabled_time": {
+		"en": "TOS network was launched: {0}"
+	},
+	"times_start_validation_time": {
+		"en": "Start of the validation cycle: {0}"
+	},
+	"times_end_validation_time": {
+		"en": "End of the validation cycle: {0}"
+	},
+	"times_start_election_time": {
+		"en": "Start of elections: {0}"
+	},
+	"times_end_election_time": {
+		"en": "End of elections: {0}"
+	},
+	"times_start_next_election_time": {
+		"en": "Beginning of the next elections: {0}"
+	},
+	"mytosctrl_update_available": {
+		"en": "{green}MyTosCtrl update available. {red}Please update it with `update` command.{endc}"
+	},
+	"tos_update_available": {
+		"en": "{green}TOS update available. {red}Please update it with `upgrade` command.{endc}"
+	},
+	"test": {
+		"en": "001"
+	},
+	"000": {
+		"en": "001"
+	},
+	"000": {
+		"en": "001"
+	},
+	"000": {
+		"en": "001"
+	},
+	"000": {
+		"en": "001"
+	},
+	"000": {
+		"en": "001"
+	}
+}

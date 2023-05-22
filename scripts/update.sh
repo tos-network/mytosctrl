@@ -1,0 +1,46 @@
+#!/bin/bash
+set -e
+
+# Check sudo
+if [ "$(id -u)" != "0" ]; then
+	echo "Please run script as root"
+	exit 1
+fi
+
+# Set default arguments
+author="tos-network"
+repo="mytosctrl"
+branch="master"
+srcdir="/usr/src/"
+bindir="/usr/bin/"
+
+# Get arguments
+while getopts a:r:b: flag
+do
+	case "${flag}" in
+		a) author=${OPTARG};;
+		r) repo=${OPTARG};;
+		b) branch=${OPTARG};;
+	esac
+done
+
+# Colors
+COLOR='\033[92m'
+ENDC='\033[0m'
+
+# Install python3 component
+pip3 install fastcrc
+
+# Go to work dir
+cd ${srcdir}
+rm -rf ${srcdir}/${repo}
+
+# Update code
+echo "https://github.com/${author}/${repo}.git -> ${branch}"
+git clone --recursive https://github.com/${author}/${repo}.git
+cd ${repo} && git checkout ${branch} && git submodule update --init --recursive
+systemctl restart mytoscore
+
+# End
+echo -e "${COLOR}[1/1]${ENDC} MyTosCtrl components update completed"
+exit 0
